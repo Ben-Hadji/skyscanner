@@ -58,29 +58,30 @@ const Airports: React.FC = (Props) => {
     <div className="App">
       <h3>CECI EST UN TEST</h3>
       <Wrapper>
-        <h1>Data from APIS</h1>
+        <h1>Airports</h1>
         {errorMsg && <p>{errorMsg}</p>}
         {loading && <h1>Loading...</h1>}
         {airports.length}
-        <table>
-          <thead>
-            <tr>
-              <td>Place name</td>
-              <td>Contry name</td>
-            </tr>
-          </thead>
-          <tbody>
-            {airports.length > 0 && airports.map((aeroport) => (
-              <tr key={aeroport.PlaceName}>
-                <td>{aeroport.PlaceName}</td>
-                <td>{aeroport.CountryName}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-     
+        
+          
+              {airports.length > 0 && airports.map((aeroport, index) => (
+                  <div className="courses-container" key={index}>
+                      <div className="course">
+                          <div className="course-preview">
+                              <h6>city</h6>
+                              <h2>{aeroport.CityName}</h2>
+                              <span>{aeroport.CountryName}</span>
+                          </div>
+                          <div className="course-info">
 
-      </Wrapper>
+                              <h6>airport</h6>
+                              <h2>{aeroport.PlaceName}</h2>
+
+                          </div>
+                      </div>
+                  </div>
+              ))}
+         </Wrapper>
     </div>
   );
 }
