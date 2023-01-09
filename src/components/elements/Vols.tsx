@@ -65,7 +65,7 @@ const Vols: React.FC = (Props) => {
         <div className="App">
             <h3>CECI EST UN TEST</h3>
             <Wrapper>
-                <h1>All Flights </h1>
+                <h1>All Flights  </h1>
                 {errorMsg && <p>{errorMsg}</p>}
                 {loading && <h1>Loading...</h1>}
                 <table>
