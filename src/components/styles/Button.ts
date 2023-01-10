@@ -9,7 +9,7 @@ const Button = styled.button<ButtonProps>`
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: darkslategrey;
+    background-color: gray;
     color: white;
 `;
 

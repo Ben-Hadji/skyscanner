@@ -62,8 +62,8 @@ const Airports: React.FC = (Props) => {
                     loading: false,
                     errorMsg: err.message,
                 })
-        );
-    }, [airport.airports.length]);
+            );
+    }, []);
 
     const { loading, airports, errorMsg } = airport;
 
@@ -85,7 +85,7 @@ const Airports: React.FC = (Props) => {
                 {errorMsg && <p>{errorMsg}</p>}
                 {loading && <Progres />}
 
-                {airports.length === 0 && <h4>VEUILLEZ PATIENTER UN INSTANT</h4>}
+                {airports.length === 0 && <h4>Nous n'avons pas reussi à acceder à votre demande</h4>}
 
                 {airports.length > 0 && airports.map((aeroport, index) => (
                     <div className="aero-container" key={index}>
@@ -110,8 +110,3 @@ const Airports: React.FC = (Props) => {
 }
 
 export default Airports;
-
-
-
-
- 
