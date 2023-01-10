@@ -5,7 +5,7 @@ import '../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
 const Vol: React.FC = (Props) => {
     return (
         <div className="wrapper bg-white">
-            
+
             <form action="#">
                 <div className="form-group d-sm-flex margin">
                     <div className="d-flex align-items-center flex-fill me-sm-1 my-sm-0 my-4 border-bottom position-relative">
@@ -35,12 +35,31 @@ const Vol: React.FC = (Props) => {
                     <span className="fas fa-users text-muted"></span>
                 </div>
                 <div className="form-group my-3">
-                    <div className="btn rounded-0 d-flex justify-content-center text-center p-3" >Search Flights
+                    <div className="btn rounded-0 d-flex justify-content-center text-center p-3" >recherche Flights
                     </div>
                 </div>
             </form>
+            <div className="container mt-5 mb-5">
+                <div className="d-flex justify-content-center row">
+                    <div className="col-md-6">
+                        <div className="card border-0">
+                            <div className="card-body d-flex flex-column justify-content-between text-white p-0">
+                                <div className="p-4 bg-top">
+                                    <div className="d-flex flex-row justify-content-between">
+                                        <div className="d-flex flex-column justify-content-between align-items-center">
+                                            <h1>IND</h1><span className="mb-2">Indianapolis</span><span>Thu, Aug 17</span><span>07:00 PM</span></div>
+                                        <div className="d-flex flex-column justify-content-center"><i className="fa fa-plane fa-3x"></i></div>
+                                        <div className="d-flex flex-column justify-content-between align-items-center">
+                                            <h1>CDG</h1><span className="mb-2">Paris</span><span>Thu, Aug 17</span><span>03:00 AM</span></div>
+                                    </div>
+                                </div>
+                            </div>
 
-        </div>)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>)
 }
-export default Vol;
+            export default Vol;
 
