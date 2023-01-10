@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Flight } from '../../types/types';
 import Wrapper from '../styles/Wrapper';
-
+import Progres from './chargement/progres'
+import Vol from './Vol'
 interface IFlight {
     loading: boolean;
     flights: Flight[];
@@ -62,12 +63,13 @@ const Vols: React.FC = (Props) => {
 
 
     return (
-        <div className="App">
+        <div >
             <h3>CECI EST UN TEST</h3>
             <Wrapper>
-                <h1>All Flights  </h1>
+                <h1>ON VA OU ? </h1>
                 {errorMsg && <p>{errorMsg}</p>}
-                {loading && <h1>Loading...</h1>}
+                {loading && <Progres />}
+                <Vol />
                 <table>
                     <thead>
                         <tr>

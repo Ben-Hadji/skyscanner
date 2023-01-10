@@ -14,6 +14,8 @@ nav{
     background-color: darkslategrey;
     height: 80px;
     width: 100%;
+    position: fixed; 
+    margin-bottom: 10px;
 }
 
 label.logo{
@@ -43,8 +45,8 @@ nav ul li a{
     text-transform: uppercase;
 }
 
-a.active, a:hover{
-    background: #808080;
+a.active, a:hover {
+    background: DarkGrey;
     transition: .5s
 }
 

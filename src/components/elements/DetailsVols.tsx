@@ -12,20 +12,23 @@ const DetailsVols: React.FC = (Props) => {
 
         const options = {
             params: {
-                itineraryId: '13542-2302070850--32171-0-12712-2302071155|12712-2302141946--32171-0-13542-2302150750',
-                adults: '1',
-                currency: 'USD',
-                countryCode: 'US',
-                market: 'en-US'
+                itineraryId: '13554-2302071945--32480-0-12712-2302072245|11442-2302142130--32480-0-13554-2302150910',
+                legs: '[{"origin":"LHR","destination":"JFK","date":"2023-02-07"},{"date":"2023-02-14","destination":"LHR","origin":"EWR"}]',
+                //adults: '1',
+                //currency: 'USD',
+                //countryCode: 'US',
+                //market: 'en-US'
             },
             headers: {
                 "Access-Control-Allow-Origin": '*',
+                'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS',
                 'X-RapidAPI-Key': 'c2a4b54320msh39c2bd408379f9bp100c21jsnd83fb8c8efcf',
                 'X-RapidAPI-Host': 'skyscanner50.p.rapidapi.com'
             }
         };
         axios.get('https://skyscanner50.p.rapidapi.com/api/v1/getFlightDetails', options)
             .then((res) => {
+                
                 console.log(res.data)
                 console.log('bebe')
                 setFlightDetails(res.data)
@@ -50,8 +53,6 @@ const DetailsVols: React.FC = (Props) => {
                     <thead>
                         <tr>
                             <td>vol</td>
-                            <td>{flightDetails?.legs[0].arrival}</td>
-                            <td>{flightDetails?.legs.length}</td>
                             <td>rien</td>
                         </tr>     
                     </thead>

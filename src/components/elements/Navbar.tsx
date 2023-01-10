@@ -1,21 +1,23 @@
 import React from "react"
+import { Link, useNavigate } from 'react-router-dom'
 import '../myCSS/nav.css'
 
 const NavBar: React.FC = (Props) => {
     return (
-        <body>
+        <div>
             <nav>
+                
                 <label className="logo">BEN</label>
                 <ul>
-                    <li><a className="active" href="#">Aeroports</a></li>
-                    <li><a href="#">Vols</a></li>
-                    <li><a href="#">Details Vols</a></li>
+                    <li><Link className="active" to="/">Aeroports</Link></li>
+                    <li><Link to="/vols">Vols</Link></li>
+                    <li><Link to="/details">Details Vols</Link></li>
                 </ul>
             </nav>
             <div className="floating-text">
                 good trip
             </div>
-        </body>
+        </div>
         )
 }
 export default NavBar;
