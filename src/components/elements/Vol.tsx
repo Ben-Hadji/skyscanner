@@ -40,6 +40,27 @@ const Vol: React.FC = (Props) => {
                 </div>
             </form>
 
+            <div className="container mt-5 mb-5">
+                <div className="d-flex justify-content-center row">
+                    <div className="col-md-6">
+                        <div className="card border-0">
+                            <div className="card-body d-flex flex-column justify-content-between text-white p-0">
+                                <div className="p-4 bg-top">
+                                    <div className="d-flex flex-row justify-content-between">
+                                        <div className="d-flex flex-column justify-content-between align-items-center">
+                                            <h1>IND</h1><span className="mb-2">Indianapolis</span><span>Thu, Aug 17</span><span>07:00 PM</span></div>
+                                        <div className="d-flex flex-column justify-content-center"><i className="fa fa-plane fa-3x"></i></div>
+                                        <div className="d-flex flex-column justify-content-between align-items-center">
+                                            <h1>CDG</h1><span className="mb-2">Paris</span><span>Thu, Aug 17</span><span>03:00 AM</span></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>)
 }
 export default Vol;
