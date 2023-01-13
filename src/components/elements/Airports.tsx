@@ -52,7 +52,7 @@ const Airports: React.FC = (Props) => {
     return (
         <div className="deb">
             <Wrapper>
-                <h1>Airports</h1>
+                <h1>Aeroport</h1>
                 <Form onSubmit={getAirports}>
                     <Search type="text" placeholder="Recherche" value={search} onChange={handleChange} />
                     <Button type="submit"> Rechercher </Button>

@@ -79,7 +79,7 @@ const Vols: React.FC = (Props) => {
     return (
         <div className="deb">
             <Wrapper>
-                <h1>flights</h1>
+                <h1>trouver votre vol</h1>
                 <Form onSubmit={getFlights}>
                     <div>
                         <Search type="text" required placeholder="origin" value={origin} onChange={handleChangeOrigine} />
