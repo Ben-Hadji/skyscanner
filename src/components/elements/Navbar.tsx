@@ -9,7 +9,7 @@ const NavBar: React.FC = (Props) => {
                 
                 <label className="logo">Skyscanner</label>
                 <ul>
-                    <li><Link className="active" to="/">Aeroports</Link></li>
+                    <li><Link to="/">Aeroports</Link></li>
                     <li><Link to="/vols">Vols</Link></li>
                     <li><Link to="/details">Details Vols</Link></li>
                 </ul>

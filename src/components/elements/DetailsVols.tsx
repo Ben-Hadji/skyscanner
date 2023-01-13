@@ -53,29 +53,18 @@ const DetailsVols: React.FC = (Props) => {
         
 
     return (
-        <div className="App">
-            <h3>details</h3>
+        <div className="deb">
+            
+            
             <Wrapper>
-                <h1></h1>
+            <br/>
+                <h1>Details du vol</h1>
                 
                 <Form onSubmit={getFlightDetails}>
                     <Search type="text" placeholder="Recherche" value={search} onChange={handleChange} />
                     <Button type="submit"> Rechercher </Button>
                 </Form>
-                <table>
-                    <thead>
-                        <tr>
-                            <td>vol</td>
-                            <td>rien</td>
-                        </tr>     
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                
             </Wrapper>
         </div>
     )
