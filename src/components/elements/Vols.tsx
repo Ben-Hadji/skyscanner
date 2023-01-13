@@ -98,7 +98,7 @@ const Vols: React.FC = (Props) => {
                 {status === false && <p>{errorMsg}</p>}
                 {loading && <Progres />}
                                 
-                {aller}
+               
                 {flights?.length > 0 &&
                     flights?.map((vol, index) => (
                         <div className="aero-container" key={index}>
@@ -107,6 +107,7 @@ const Vols: React.FC = (Props) => {
                                     
                                     <h6>depart</h6>
                                     <h2>{vol.legs[0].departure}</h2>
+                                    
                                     <h6>price</h6>
                                     <h2>{vol.price.amount}</h2>
                                 </div>
