@@ -8,9 +8,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-body {
-    background-color: #dcf4ff;
-}
 
 
 .wrapper {
@@ -18,85 +15,85 @@ body {
     margin: 50px auto;
 }
 
-    .wrapper form {
-        padding: 30px 50px;
-    }
+.wrapper form {
+    padding: 30px 50px;
+}
 
-        .wrapper form .form-group {
-            padding-bottom: .5rem;
-        }
+.wrapper form .form-group {
+    padding-bottom: .5rem;
+}
 
-        .wrapper form .option {
-            position: relative;
-            padding-left: 25px;
-            cursor: pointer;
-            display: block;
-        }
+.wrapper form .option {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    display: block;
+}
 
-            .wrapper form .option input {
-                display: none;
-            }
+.wrapper form .option input {
+    display: none;
+}
 
-        .wrapper form .checkmark {
-            position: absolute;
-            top: 4px;
-            left: 0;
-            height: 17px;
-            width: 17px;
-            background-color: #fff;
-            border: 1px solid #aaa;
-            border-radius: 50%;
-        }
+.wrapper form .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+}
 
-        .wrapper form .option input:checked ~ .checkmark:after {
-            display: block;
-        }
+.wrapper form .option input:checked~.checkmark:after {
+    display: block;
+}
 
-        .wrapper form .option .checkmark:after {
-            content: "";
-            width: 7px;
-            height: 7px;
-            display: block;
-            border-radius: 50%;
-            background-color: #333;
-            position: absolute;
-            top: 48%;
-            left: 52%;
-            transform: translate(-50%, -50%) scale(0);
-            transition: 200ms ease-in-out 0s;
-        }
+.wrapper form .option .checkmark:after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: block;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    top: 48%;
+    left: 52%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out 0s;
+}
 
-        .wrapper form .option:hover input[type="radio"] ~ .checkmark {
-            background-color: #f4f4f4;
-        }
+.wrapper form .option:hover input[type="radio"]~.checkmark {
+    background-color: #f4f4f4;
+}
 
-        .wrapper form .option input[type="radio"]:checked ~ .checkmark {
-            background: #fff;
-            color: #fff;
-            transition: 300ms ease-in-out 0s;
-        }
+.wrapper form .option input[type="radio"]:checked~.checkmark {
+    background: #fff;
+    color: #fff;
+    transition: 300ms ease-in-out 0s;
+}
 
-            .wrapper form .option input[type="radio"]:checked ~ .checkmark:after {
-                transform: translate(-50%, -50%) scale(1);
-                color: #fff;
-            }
+.wrapper form .option input[type="radio"]:checked~.checkmark:after {
+    transform: translate(-50%, -50%) scale(1);
+    color: #fff;
+}
 
-        .wrapper form a {
-            color: #333;
-        }
+.wrapper form a {
+    color: #333;
+}
 
-        .wrapper form .form-control {
-            outline: none;
-            border: none;
-        }
+.wrapper form .form-control {
+    outline: none;
+    border: none;
+}
 
-            .wrapper form .form-control:focus {
-                box-shadow: none;
-            }
+.wrapper form .form-control:focus {
+    box-shadow: none;
+}
 
-        .wrapper form input[type="text"]:focus::placeholder {
-            color: transparent
-        }
+.wrapper form input[type="text"]:focus::placeholder {
+    color: transparent
+}
 
 input[type="date"] {
     cursor: pointer;
@@ -137,13 +134,13 @@ input[type="date"] {
     content: 'Traveller(s)';
 }
 
-.wrapper form input[type="text"]:focus ~ .label::after {
+.wrapper form input[type="text"]:focus~.label::after {
     top: -15px;
     left: 0px;
     transform: scale(1);
 }
 
-.wrapper form input[type="date"]:focus ~ .label::after {
+.wrapper form input[type="date"]:focus~.label::after {
     top: -15px;
     left: 0px;
     transform: scale(1);
@@ -160,9 +157,9 @@ input[type="date"] {
         margin: 10px;
     }
 
-        .wrapper form {
-            padding: 20px;
-        }
+    .wrapper form {
+        padding: 20px;
+    }
 
     .margin {
         margin: .2rem 0rem;

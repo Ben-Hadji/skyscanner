@@ -16,8 +16,8 @@ export type Leg= {
     origin: Place,
     destination: Place,
     stop_count ?: number,/*escal...pas sûr de le garder*/
-    departure: Date,
-    arrival: Date,
+    departure: string,
+    arrival: string,
     duration: number, 
     flightNumber ?: string, 
     operatingCarrier ?: Carrier,
