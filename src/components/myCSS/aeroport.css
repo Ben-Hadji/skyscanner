@@ -7,7 +7,7 @@
 
 
 .aero {
-    background-color: #fff;
+    background-color: GhostWhite;
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -17,19 +17,21 @@
     width: 700px;
 }
 
-    .aero h6 {
-        opacity: 0.6;
-        margin: 0;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-    }
+.aero h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
+.deb{
+    margin-top: 50px;
+}
 
-
-    .aero h2 {
-        letter-spacing: 1px;
-        margin: 10px 0;
-    }
+.aero h2 {
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
 
 .aero-preview {
     background-color: darkslategrey;
@@ -38,14 +40,14 @@
     max-width: 250px;
 }
 
-    .aero-preview a {
-        color: #fff;
-        display: inline-block;
-        font-size: 12px;
-        opacity: 0.6;
-        margin-top: 30px;
-        text-decoration: none;
-    }
+.aero-preview a {
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-top: 30px;
+    text-decoration: none;
+}
 
 .aero-info {
     padding: 30px;
@@ -58,7 +60,7 @@
     background-color: #001F61;
     border-radius: 10px 10px 0 0;
     color: #fff;
-    font-family: 'Muli';
+    /* font-family: 'Muli'; */
     padding: 7px 15px;
     position: fixed;
     bottom: 0;
@@ -67,5 +69,3 @@
     text-align: center;
     z-index: 998;
 }
-
-

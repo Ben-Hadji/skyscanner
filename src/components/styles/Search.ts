@@ -11,6 +11,7 @@ const Search = styled.input<SearchProps>`
     width: 15rem;
     border-radius: 5px;
     border: 1px solid ;
+    background-color: GhostWhite;
 `;
 
 export default Search ;

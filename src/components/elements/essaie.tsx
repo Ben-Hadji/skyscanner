@@ -12,21 +12,19 @@ import Progres from "./chargement/progres";
 import '../myCSS/booking.css'
 
 
-const Vols: React.FC = (Props) => {
+const ZEST: React.FC = (Props) => {
     const [origin, setOrigin] = useState<string>("");
 
     interface IFlight {
         loading: boolean;
         flights: Flight[];
         errorMsg: string;
-        status: boolean;
     }
 
     const [flight, setFlight] = useState<IFlight>({
         loading: false,
         flights: [] as Flight[],
         errorMsg: "",
-        status: true,
     });
 
     const getFlights = async (e: React.FormEvent) => {
@@ -34,7 +32,7 @@ const Vols: React.FC = (Props) => {
         const options = {
           method: 'GET',
           params: {
-              origin: origin,
+              origin: 'LOND',
               destination: 'NYCA',
               date: '2023-02-07',
               adults: '1',
@@ -49,41 +47,36 @@ const Vols: React.FC = (Props) => {
       };
         console.log('yes')
         const res = await axios.get("https://skyscanner50.p.rapidapi.com/api/v1/searchFlights", options);
-        
         setFlight({
-            flights: res.data as Flight[],
+            flights: res.data.data as Flight[],
             loading: false,
-            errorMsg: res.data.message,
-            status: res.data.status
+            errorMsg: res.data.message[0].query,
         });
-        console.log(res.data.message)
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setOrigin(e.target.value);
     };
 
-    const { loading, flights, errorMsg , status} = flight;
+    const { loading, flights, errorMsg } = flight;
 
     return (
         <div className="deb">
             <Wrapper>
                 <h1>flights</h1>
                 <Form onSubmit={getFlights}>
-                    <Search type="text" required placeholder="origin" value={origin} onChange={handleChange} />
+                    <Search type="text" placeholder="origin" value={origin} onChange={handleChange} />
                     <Button type="submit"> Rechercher </Button>
                 </Form>
-                {status === false && <span>it seems that a problem occurred {":"}</span>}
                 {errorMsg && <p>{errorMsg}</p>}
                 {loading && <Progres />}
 
-                
+                {flights?.length === 0 && <h4>Dites nous ?</h4>}
 
                 {flights?.length > 0 &&
                     flights?.sort((a, b) => a.price > b.price ? 1 : -1)
                         .map((vol, index) => (
                             <div className="aero-container" key={index}>
-                                <p>{flights.length}</p>
                                 <div className="aero">
                                     <div className="aero-preview">
                                         <h6>city</h6>
@@ -102,4 +95,4 @@ const Vols: React.FC = (Props) => {
     );
 };
 
-export default Vols;
+export default ZEST;

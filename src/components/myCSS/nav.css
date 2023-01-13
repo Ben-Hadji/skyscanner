@@ -19,7 +19,7 @@ nav{
 }
 
 label.logo{
-    color: white;
+    color: GhostWhite;
     font-size: 35px; 
     line-height: 80px;
     padding: 0 100px;
@@ -46,12 +46,12 @@ nav ul li a{
 }
 
 a.active, a:hover {
-    background: DarkGrey;
-    transition: .5s
+    background: GhostWhite;
+    transition: .5s;
+    color: darkslategrey;
 }
 
 .floating-text {
-    background-color: darkslategrey;
     border-radius: 10px 10px 0 0;
     color: #fff;
     font-family: 'Muli';
